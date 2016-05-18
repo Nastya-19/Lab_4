@@ -8,7 +8,7 @@ int zn(int*mas, int i);
 
 
 int main(int argc, char *argv[]) {
-	int mas[10], i;
+	int mas[10], i, obrat[10];
 	
 	srand(time(0));
 	
@@ -20,10 +20,19 @@ int main(int argc, char *argv[]) {
 	
 	vybor(mas);
    
-	printf("\nRosstavlen metodom vibora: \n");
+	printf("\nRosstavlen metodom pryamogo vibora: \n");
 	for(i = 0; i < 10; i++)
 	printf("%d ", mas[i]);
-
+	
+	for(i = 0; i < 10; i++)
+	obrat[i] = mas[10-(i+1)];
+	
+	printf("\nObratnii massiv: \n");
+   
+	for(i = 0; i < 10; i++)
+	printf("%d ", obrat[i]);
+      
+      
 	system("pause");
 	return 0;
 }
