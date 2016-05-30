@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	for (i = 0; i < 20; i++){
-		if((mas[i]%2 == 0) && (mas[i] > 0)){
+		if((i%2 == 0) && (mas[i] > 0)){
 			d = d * mas[i];
 			k++;
 		}
