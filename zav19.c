@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	printf("\nChisla kotorue ne povtoryautsa:\n");
-	print_mas(mas2, k);
+	print_mas(mas2, k); 
 	
 	system("pause");
 	return 0;
